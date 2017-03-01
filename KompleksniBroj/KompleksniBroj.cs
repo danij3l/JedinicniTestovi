@@ -21,5 +21,11 @@ namespace Vsite.Oom
         {
             return new KompleksniBroj(br1.realniDio + br2.realniDio, br1.imagrinarniDio + br2.imagrinarniDio);
         }
+
+        public static KompleksniBroj operator -(KompleksniBroj br1, KompleksniBroj br2)
+        {
+            return new KompleksniBroj(br1.realniDio - br2.realniDio, br1.imagrinarniDio - br2.imagrinarniDio);
+        }
+
     }
 }
